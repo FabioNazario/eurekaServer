@@ -1,7 +1,8 @@
 server:
   port: 8761
 
-eureka:  client:    register-with-eureka: false
+eureka:
+    client:    register-with-eureka: false
     fetch-registry: false
 
 spring:
@@ -9,3 +10,4 @@ spring:
     import: optional:configserver:http://localhost:8888
 logging:
   config: ${microservice.log.config}
+  
